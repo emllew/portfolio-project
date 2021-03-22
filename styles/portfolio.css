@@ -138,7 +138,9 @@ s .appComment {
   margin: 30px;
   font-size: large;
 }
-
+.fa-instagram {
+  font-weight: bold;
+}
 @media (max-width: 480px) {
   .header {
     height: 70vh;
