@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Itim&family=Princess+Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Caveat:wght@500&family=Charmonman&family=Homemade+Apple&family=Itim&family=La+Belle+Aurore&family=Montez&family=Princess+Sofia&family=Sacramento&display=swap');
 
 :root {
   --background-color: #fffdf7;
@@ -10,8 +10,11 @@
   --orange: #dd9c13;
   --yellow: #f3d215;
   --bright-blue: #50aec7;
-  --pale-blue: rgba(175, 209, 205, 0.9);
+  --pale-blue: rgba(175, 209, 205);
   --pink: #f36192;
+}
+* {
+  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
@@ -34,10 +37,16 @@ body {
   flex-direction: column;
   position: relative;
 }
-
+.header.about {
+  background-color: var(--background-color);
+  width: 100vw;
+  flex-direction: column;
+  position: relative;
+}
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link {
   color: var(--orange);
+  float: right;
 }
 
 .hero {
@@ -52,22 +61,31 @@ body {
 
 h1 {
   font-size: 9vw;
-  font-family: 'princess sofia', cursive;
+  font-family: 'homemade apple', cursive;
   color: rgb(255, 254, 254);
+  padding: 20px;
 }
-
 h2 {
+  font-size: 6vw;
+  font-family: 'homemade apple', cursive;
+  color: rgb(255, 254, 254);
+  padding: 20px;
+  text-shadow: 2px 5px 6px rgba(220, 189, 195, 0.6);
+}
+h3 {
   color: rgb(255, 254, 250);
   font-size: 24px;
   padding: 20px;
   line-height: 1.5;
 }
-
 a {
   color: var(--darker-blue);
   text-decoration: none;
 }
 a:hover {
+  color: var(--orange);
+}
+a.active {
   color: var(--orange);
 }
 button {
@@ -89,31 +107,41 @@ button:hover {
   flex-direction: column;
   background-color: var(--lime-green);
 }
-
-h3 {
+.about-section {
+  margin-top: 2vh;
+}
+button .contact {
+  width: 20px;
+}
+.address {
   font-size: 24px;
   padding-bottom: 20px;
-  text-shadow: 0 0 15px rgba(255, 253, 135, 0.884);
-  color: var(--darker-blue);
-}
-h4 {
-  font-size: 24px;
-  padding: 20px;
-  text-shadow: 0 0 15px rgba(142, 180, 176, 0.87);
-  color: var(--pale-peach);
+  text-shadow: 0 0 10px rgba(255, 253, 135, 0.884);
 }
 
 img {
+  justify-content: center;
+  align-content: center;
   max-width: 40vw;
   border: 3px solid var(--orange);
 }
 img:hover {
   border: 3px solid var(--yellow);
 }
-s .appComment {
+.profilePic {
+  border-radius: 360px;
+  width: 20vw;
+}
+
+.about-section p {
+  color: var(--bright-blue);
+}
+.appComment {
   color: var(--darker-blue);
 }
 .footer {
+  padding: 0;
+  margin: 0;
   background-color: var(--pale-blue);
   display: flex;
   flex-direction: column;
@@ -122,8 +150,8 @@ s .appComment {
   text-align: center;
   width: 100%;
   height: 30vh;
-  margin-top: 30px;
 }
+
 .circle {
   position: relative;
   background-color: var(--yellow);
@@ -141,7 +169,7 @@ s .appComment {
 .fa-instagram {
   font-weight: bold;
 }
-@media (max-width: 480px) {
+@media (max-width: 310px) {
   .header {
     height: 70vh;
   }
@@ -158,5 +186,9 @@ s .appComment {
   button {
     font-size: 4vw;
     padding: 7px;
+  }
+  .footer {
+    width: 100vw;
+    height: 100vh;
   }
 }
