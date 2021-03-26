@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Caveat:wght@500&family=Charmonman&family=Homemade+Apple&family=Itim&family=La+Belle+Aurore&family=Montez&family=Princess+Sofia&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Homemade+Apple&family=Itim&family=Playfair+Display:wght@600&display=swap');
 
 :root {
   --background-color: #fffdf7;
-  --darker-blue: #298fa6;
-  --lime-green: rgba(202, 208, 114, 0.6);
+  --lime-green: rgb(180, 208, 114);
+  --darker-green: rgb(119, 141, 58);
   --pale-peach: #f4d4b5;
-  --deep-red: #bf0404;
-  --lilac: #dcbdc3;
-  --orange: #dd9c13;
+  --lilac-full: rgb(211, 173, 180);
+  --lilac-faint: rgba(220, 189, 195, 0.6);
+  --orange: #eb9310;
   --yellow: #f3d215;
-  --bright-blue: #50aec7;
-  --pale-blue: rgba(175, 209, 205);
-  --pink: #f36192;
+  --footer: rgba(164, 185, 113, 0.5);
+  --box-shadow: 2px 5px 6px rgba(220, 189, 195, 0.4);
+  --light-shadow: 4px 3px 10px rgba(255, 255, 255, 0.3);
 }
 * {
   box-sizing: border-box;
@@ -43,10 +43,19 @@ body {
   flex-direction: column;
   position: relative;
 }
+.navbar-green .nav-link {
+  color: var(--lilac-full);
+  text-shadow: var(--light-shadow);
+}
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link {
-  color: var(--orange);
-  float: right;
+  color: var(--yellow);
+}
+.navbar-toggler {
+  background-color: var(--pale-peach);
+  color: var(--pale-peach);
+  border: var(--orange);
+  box-shadow: none;
 }
 
 .hero {
@@ -56,7 +65,7 @@ body {
   max-width: 80vw;
   position: absolute;
   text-align: center;
-  text-shadow: 2px 5px 6px rgba(220, 189, 195, 0.6);
+  text-shadow: var(--box-shadow);
 }
 
 h1 {
@@ -67,28 +76,24 @@ h1 {
 }
 h2 {
   font-size: 6vw;
-  font-family: 'homemade apple', cursive;
-  color: rgb(255, 254, 254);
-  padding: 20px;
-  text-shadow: 2px 5px 6px rgba(220, 189, 195, 0.6);
+  font-family: 'playfair display', serif;
+  color: var(--lilac-full);
+  line-height: 1.5;
+  text-shadow: var(--box-shadow);
 }
 h3 {
+  font-family: 'playfair display', serif;
   color: rgb(255, 254, 250);
   font-size: 24px;
-  padding: 20px;
-  line-height: 1.5;
-}
-a {
-  color: var(--darker-blue);
-  text-decoration: none;
-}
-a:hover {
-  color: var(--orange);
-}
-a.active {
-  color: var(--orange);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 2;
+  text-shadow: var(--light-shadow);
 }
 button {
+  box-shadow: var(--box-shadow);
+}
+button.projects {
   color: var(--orange);
   background-color: var(--pale-peach);
   border: 2px solid var(--pale-peach);
@@ -97,26 +102,55 @@ button {
   padding: 15px;
   margin: 20px;
 }
-button:hover {
-  border: 2px solid var(--orange);
+button.projects:hover {
+  border: 2px solid var(--yellow);
 }
 .projects-section {
   text-align: center;
   padding: 30px;
-  margin: 30px;
+  margin: 40px;
   flex-direction: column;
-  background-color: var(--lime-green);
+  background-color: rgba(202, 208, 114, 0.4);
 }
-.about-section {
-  margin-top: 2vh;
+
+.about-section p {
+  color: var(--lime-green);
+  line-height: 1.5;
 }
-button .contact {
-  width: 20px;
+.contactMeBox {
+  font-size: 1.3rem;
+  width: 100%;
+  padding: 5px;
+  margin: 40px auto;
+  background-color: var(--lilac-faint);
+  border-radius: 30px;
+  color: var(--background-color);
+  text-shadow: var(--box-shadow);
 }
+.workTxt {
+  text-align: right;
+}
+.workBtn {
+  text-align: left;
+}
+button.contact {
+  color: var(--orange);
+  background-color: var(--pale-peach);
+  border: 2px solid var(--pale-peach);
+  border-radius: 4pt;
+  font-size: 19px;
+  margin: 25px auto;
+  padding: 15px;
+}
+button.contact:hover {
+  border: 2px solid var(--yellow);
+}
+
 .address {
+  color: var(--lilac-full);
   font-size: 24px;
   padding-bottom: 20px;
-  text-shadow: 0 0 10px rgba(255, 253, 135, 0.884);
+  text-shadow: 0 0 10px var(--lilac-faint);
 }
 
 img {
@@ -124,25 +158,25 @@ img {
   align-content: center;
   max-width: 40vw;
   border: 3px solid var(--orange);
+  box-shadow: var(--box-shadow);
 }
 img:hover {
   border: 3px solid var(--yellow);
 }
 .profilePic {
   border-radius: 360px;
-  width: 20vw;
+  width: 30vw;
+}
+a {
+  color: var(--darker-green);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--orange);
 }
 
-.about-section p {
-  color: var(--bright-blue);
-}
-.appComment {
-  color: var(--darker-blue);
-}
 .footer {
-  padding: 0;
-  margin: 0;
-  background-color: var(--pale-blue);
+  background-color: var(--footer);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,7 +185,6 @@ img:hover {
   width: 100%;
   height: 30vh;
 }
-
 .circle {
   position: relative;
   background-color: var(--yellow);
@@ -166,9 +199,7 @@ img:hover {
   margin: 30px;
   font-size: large;
 }
-.fa-instagram {
-  font-weight: bold;
-}
+
 @media (max-width: 310px) {
   .header {
     height: 70vh;
