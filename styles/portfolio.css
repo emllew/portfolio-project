@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Homemade+Apple&family=Itim&family=Playfair+Display:wght@600&display=swap');
 
 :root {
-  --background-color: #fffdf7;
-  --lime-green: rgb(180, 208, 114);
-  --darker-green: rgb(119, 141, 58);
-  --pale-peach: #f4d4b5;
-  --lilac-full: rgb(211, 173, 180);
+  --background-color: rgba(255, 255, 230, 0.623);
+  --lime-green: #cad072;
+  --darker-green: rgb(98, 148, 85);
+  --blue: #8fc9d6;
+  --pale-blue: #a1d1dba1;
+  --red: #b42e2e;
+  --pink: #ecbdcf;
+  --pale-peach: #fce498;
+  --lilac-full: rgb(212, 137, 150);
   --lilac-faint: rgba(220, 189, 195, 0.6);
-  --orange: #eb9310;
+  --orange: #e99a25;
   --yellow: #f3d215;
-  --footer: rgba(164, 185, 113, 0.5);
-  --box-shadow: 2px 5px 6px rgba(220, 189, 195, 0.4);
+  --footer: rgba(164, 185, 113, 0.2);
+  --box-shadow: 2px 5px 6px rgba(212, 216, 228, 0.445);
   --light-shadow: 4px 3px 10px rgba(255, 255, 255, 0.3);
 }
 * {
@@ -31,7 +35,6 @@ body {
   flex: 1 0 auto;
 }
 .header {
-  background-color: rgba(220, 189, 195, 0.5);
   height: 100vh;
   width: 100vw;
   flex-direction: column;
@@ -44,10 +47,12 @@ body {
   position: relative;
 }
 .navbar-green .nav-link {
-  color: var(--lilac-full);
+  color: var(--orange);
   text-shadow: var(--light-shadow);
 }
-.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-link.active {
+  color: var(--blue);
+}
 .navbar-nav .nav-item:hover .nav-link {
   color: var(--yellow);
 }
@@ -65,67 +70,122 @@ body {
   max-width: 80vw;
   position: absolute;
   text-align: center;
-  text-shadow: var(--box-shadow);
 }
 
 h1 {
   font-size: 9vw;
   font-family: 'homemade apple', cursive;
-  color: rgb(255, 254, 254);
-  padding: 20px;
+  color: var(--blue);
+  padding: 10px;
+  line-height: 1.6;
+  text-shadow: var(--box-shadow);
 }
 h2 {
   font-size: 6vw;
-  font-family: 'playfair display', serif;
-  color: var(--lilac-full);
-  line-height: 1.5;
+  font-family: 'homemade apple', serif;
+  padding-bottom: 35px;
+  color: var(--blue);
+  line-height: 1.4;
   text-shadow: var(--box-shadow);
 }
 h3 {
-  font-family: 'playfair display', serif;
-  color: rgb(255, 254, 250);
+  font-family: 'itim', serif;
+  color: var(--darker-green);
   font-size: 24px;
   padding-top: 15px;
   padding-bottom: 15px;
   line-height: 2;
-  text-shadow: var(--box-shadow);
+
+  text-align: center;
 }
-button {
-  box-shadow: var(--box-shadow);
+h4 {
+  font-size: 3.5vw;
+  font-family: 'itim', serif;
+  padding-bottom: 35px;
+  color: var(--blue);
+  line-height: 2;
 }
+p {
+  color: white;
+}
+
 button.projects {
   color: var(--orange);
   background-color: var(--pale-peach);
   border: 2px solid var(--pale-peach);
-  border-radius: 4pt;
+  border-radius: 2px;
   font-size: 19px;
   padding: 15px;
   margin: 20px;
+  width: 50vw;
+  text-align: center;
 }
 button.projects:hover {
-  border: 2px solid var(--yellow);
+  color: var(--yellow);
+  border: 2px solid var(--blue);
+  transition: 200ms ease-in;
+}
+button.contact {
+  color: var(--orange);
+  background-color: var(--pale-peach);
+  border: 2px solid var(--pale-peach);
+  border-radius: 2px;
+  font-size: 19px;
+  margin: 25px auto;
+  padding: 15px;
+}
+button.contact:hover {
+  border: 2px solid var(--blue);
+  transition: 200ms ease-in-out;
+  color: var(--yellow);
 }
 .projects-section {
-  text-align: center;
-  padding: 30px;
-  margin: 40px;
+  padding: 40px;
+  margin: 30px;
   flex-direction: column;
   background-color: rgba(202, 208, 114, 0.4);
 }
-
+.project-card {
+  width: 26vw;
+  border: none;
+  border-radius: 2px;
+}
+.card-text {
+  text-align: center;
+  color: var(--blue);
+}
+.contact-me-section {
+  font-size: 1.2em;
+  height: 100vh;
+  line-height: 2;
+  text-align: center;
+  background-color: rgba(202, 208, 114, 0.4);
+}
 .about-section p {
-  color: var(--lime-green);
   line-height: 1.5;
+}
+.about-p1 {
+  color: var(--darker-green);
+}
+.about-p2 {
+  color: var(--darker-green);
+}
+.about-p3 {
+  color: var(--darker-green);
+}
+ol {
+  list-style: none;
+  color: orange;
 }
 .contactMeBox {
   font-size: 1.3rem;
-  width: 100%;
+  width: 90%;
   padding: 5px;
   margin: 40px auto;
-  background-color: var(--lilac-faint);
-  border-radius: 30px;
+  background-color: var(--pale-blue);
+  border-radius: 10px;
   color: var(--background-color);
-  text-shadow: var(--box-shadow);
+  text-shadow: var(--light-shadow);
 }
 .workTxt {
   text-align: right;
@@ -133,21 +193,9 @@ button.projects:hover {
 .workBtn {
   text-align: left;
 }
-button.contact {
-  color: var(--orange);
-  background-color: var(--pale-peach);
-  border: 2px solid var(--pale-peach);
-  border-radius: 4pt;
-  font-size: 19px;
-  margin: 25px auto;
-  padding: 15px;
-}
-button.contact:hover {
-  border: 2px solid var(--yellow);
-}
 
 .address {
-  color: var(--lilac-full);
+  color: var(--darker-green);
   font-size: 24px;
   padding-bottom: 20px;
   text-shadow: 0 0 10px var(--lilac-faint);
@@ -199,7 +247,16 @@ a:hover {
   margin: 30px;
   font-size: large;
 }
-
+@media (max-width: 575px) {
+  .project-card {
+    width: 70vw;
+    padding: 15px;
+    margin: 20px;
+  }
+  .about-section {
+    margin: 30px auto;
+  }
+}
 @media (max-width: 310px) {
   .header {
     height: 70vh;
