@@ -88,7 +88,7 @@ h3 {
   padding-top: 15px;
   padding-bottom: 15px;
   line-height: 2;
-  text-shadow: var(--light-shadow);
+  text-shadow: var(--box-shadow);
 }
 button {
   box-shadow: var(--box-shadow);
