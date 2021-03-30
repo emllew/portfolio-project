@@ -236,7 +236,7 @@ a:hover {
 .circle {
   position: relative;
   background-color: var(--yellow);
-  color: var(--background-color);
+  color: white;
   border: none;
   border-radius: 200px;
   display: flex;
