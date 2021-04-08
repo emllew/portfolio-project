@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Homemade+Apple&family=Itim&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,600&family=Source+Serif+Pro:ital,wght@0,900;1,900&display=swap');
 
 :root {
-  --background-color: rgba(255, 255, 230, 0.623);
+  --background-color: rgba(255, 251, 234, 0.308);
   --lime-green: #cad072;
   --darker-green: rgb(98, 148, 85);
   --blue: #8fc9d6;
@@ -15,7 +15,10 @@
   --yellow: #f3d215;
   --footer: rgba(164, 185, 113, 0.2);
   --box-shadow: 2px 5px 6px rgba(212, 216, 228, 0.445);
-  --light-shadow: 4px 3px 10px rgba(255, 255, 255, 0.3);
+  --light-shadow: 2px 3px 5px rgba(255, 255, 255, 0.116);
+  --header-font: 'source serif pro';
+  --text-font: 'lora';
+  --subheader-font: 'source serif pro';
 }
 * {
   box-sizing: border-box;
@@ -26,7 +29,7 @@ html {
 
 body {
   height: 100%;
-  font-family: 'itim', sans-serif;
+  font-family: var(--text-font), sans-serif;
   display: flex;
   background-color: var(--background-color);
   flex-direction: column;
@@ -43,6 +46,7 @@ body {
 .header.about {
   background-color: var(--background-color);
   width: 100vw;
+
   flex-direction: column;
   position: relative;
 }
@@ -51,14 +55,15 @@ body {
   text-shadow: var(--light-shadow);
 }
 .navbar-nav .nav-link.active {
-  color: var(--blue);
+  color: var(--lime-green);
+  font-style: italic;
 }
 .navbar-nav .nav-item:hover .nav-link {
   color: var(--yellow);
 }
 .navbar-toggler {
   background-color: var(--pale-peach);
-  color: var(--pale-peach);
+
   border: var(--orange);
   box-shadow: none;
 }
@@ -73,23 +78,37 @@ body {
 }
 
 h1 {
-  font-size: 9vw;
-  font-family: 'homemade apple', cursive;
-  color: var(--blue);
+  font-size: 7vw;
+  font-family: var(--header-font), serif;
+  font-weight: 600;
+  color: var(--lime-green);
   padding: 10px;
-  line-height: 1.6;
-  text-shadow: var(--box-shadow);
+  line-height: 1.2;
+  text-shadow: 3px 2px yellow;
+  animation: color-change 6s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: var(--lime-green);
+  }
+  50% {
+    color: var(--darker-green);
+  }
+  100% {
+    color: var(--lime-green);
+  }
 }
 h2 {
   font-size: 6vw;
-  font-family: 'homemade apple', serif;
+  font-family: var(--subheader-font), serif;
   padding-bottom: 35px;
-  color: var(--blue);
+  color: var(--lime-green);
   line-height: 1.4;
-  text-shadow: var(--box-shadow);
+  text-shadow: 3px 2px yellow;
 }
 h3 {
-  font-family: 'itim', serif;
+  font-family: var(--subheader-font), serif;
   color: var(--darker-green);
   font-size: 24px;
   padding-top: 15px;
@@ -100,9 +119,9 @@ h3 {
 }
 h4 {
   font-size: 3.5vw;
-  font-family: 'itim', serif;
+  font-family: var(--subheader-font), serif;
   padding-bottom: 35px;
-  color: var(--blue);
+  color: var(--darker-green);
   line-height: 2;
 }
 p {
@@ -121,8 +140,8 @@ button.projects {
   text-align: center;
 }
 button.projects:hover {
-  color: var(--yellow);
-  border: 2px solid var(--blue);
+  color: var(--darker-green);
+  border: 2px solid var(--lime-green);
   transition: 200ms ease-in;
 }
 button.contact {
@@ -135,15 +154,18 @@ button.contact {
   padding: 15px;
 }
 button.contact:hover {
-  border: 2px solid var(--blue);
+  border: 2px solid var(--lime-green);
   transition: 200ms ease-in-out;
-  color: var(--yellow);
+  color: var(--darker-green);
 }
+
 .projects-section {
   padding: 40px;
-  margin: 30px;
+  margin: 40px;
   flex-direction: column;
-  background-color: rgba(202, 208, 114, 0.4);
+  background-color: #cad0728f;
+  border-radius: 70px 70px 1px 1px;
+  display: block;
 }
 .project-card {
   width: 26vw;
@@ -152,38 +174,43 @@ button.contact:hover {
 }
 .card-text {
   text-align: center;
-  color: var(--blue);
+  color: var(--darker-green);
 }
 .contact-me-section {
   font-size: 1.2em;
-  height: 100vh;
+  height: 90vh;
   line-height: 2;
   text-align: center;
   background-color: rgba(202, 208, 114, 0.4);
+  padding: 40px;
+  background-color: #cad0728f;
+  border-radius: 70px 70px 1px 1px;
+}
+.about-section {
+  background-color: var(--background-color);
+  margin: 1px;
+  float: left;
 }
 .about-section p {
   line-height: 1.5;
-}
-.about-p1 {
-  color: var(--darker-green);
-}
-.about-p2 {
-  color: var(--darker-green);
-}
-.about-p3 {
+  padding-top: 0;
+  margin-top: 0;
+  padding: 10px;
   color: var(--darker-green);
 }
 ol {
   list-style: none;
   color: orange;
+  padding: 0;
 }
 .contactMeBox {
+  clear: both;
   font-size: 1.3rem;
   width: 90%;
   padding: 5px;
   margin: 40px auto;
-  background-color: var(--pale-blue);
-  border-radius: 10px;
+  background-color: var(--lime-green);
+  border-radius: 3px;
   color: var(--background-color);
   text-shadow: var(--light-shadow);
 }
@@ -226,6 +253,7 @@ a:hover {
 .footer {
   background-color: var(--footer);
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -247,6 +275,7 @@ a:hover {
   margin: 30px;
   font-size: large;
 }
+
 @media (max-width: 575px) {
   .project-card {
     width: 70vw;
@@ -255,6 +284,11 @@ a:hover {
   }
   .about-section {
     margin: 30px auto;
+  }
+  h2 {
+    font-size: 3em;
+    padding: 5px;
+    line-height: 1;
   }
 }
 @media (max-width: 310px) {
@@ -268,13 +302,14 @@ a:hover {
     font-size: 15vw;
   }
   h2 {
-    font-size: 5vw;
+    font-size: 7vw;
     padding: 5px;
   }
   button {
     font-size: 4vw;
     padding: 7px;
   }
+
   .footer {
     width: 100vw;
     height: 100vh;
