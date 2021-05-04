@@ -133,7 +133,7 @@ h4 {
   font-weight: 600;
 }
 h5 {
-  font-size: 3vw;
+  font-size: 2.6vw;
   color: var(--lime-green);
   padding-bottom: 0;
   font-weight: 600;
@@ -218,7 +218,7 @@ button.contact:hover {
   border-radius: 70px 70px 1px 1px;
 }
 .about-section {
-  margin: 1px;
+  margin: 20px;
   float: left;
 }
 .about-section p {
