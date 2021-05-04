@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,600&family=Source+Serif+Pro:ital,wght@0,900;1,900&display=swap');
 
 :root {
-  --background-color: rgba(255, 251, 234, 0.308);
+  --background-color: rgba(255, 251, 234, 0.24);
   --lime-green: #cad072;
   --darker-green: rgb(98, 148, 85);
   --blue: #8fc9d6;
@@ -76,6 +76,11 @@ body {
   position: absolute;
   text-align: center;
 }
+.fa-angle-double-down {
+  color: var(--darker-green);
+  font-size: 2em;
+  padding: 20px;
+}
 
 h1 {
   font-size: 7vw;
@@ -85,7 +90,7 @@ h1 {
   padding: 10px;
   line-height: 1.2;
   text-shadow: 3px 2px yellow;
-  animation: color-change 6s infinite;
+  animation: color-change 4s infinite;
 }
 
 @keyframes color-change {
