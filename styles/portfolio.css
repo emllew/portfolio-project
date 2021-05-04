@@ -132,7 +132,20 @@ h4 {
 p {
   color: white;
 }
-
+.groovy {
+  animation: color-change-yellow 3s infinite;
+}
+@keyframes color-change-yellow {
+  0% {
+    color: var(--darker-green);
+  }
+  50% {
+    color: var(--orange);
+  }
+  100% {
+    color: var(--darker-green);
+  }
+}
 button.projects {
   color: var(--orange);
   background-color: var(--pale-peach);
