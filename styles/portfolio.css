@@ -219,7 +219,8 @@ button.contact:hover {
   border-radius: 70px 70px 1px 1px;
 }
 .about-section {
-  margin: 20px;
+  margin-top: 0px;
+  margin: 10px;
   float: left;
 }
 .about-section p {
@@ -228,6 +229,9 @@ button.contact:hover {
   margin-top: 0;
   font-weight: 200;
   color: var(--darker-green);
+}
+.about {
+  height: 80vh;
 }
 img.icon {
   height: 10vh;
@@ -245,8 +249,7 @@ ol {
 .contactMeBox {
   clear: both;
   font-size: 1.1rem;
-  width: 90%;
-  padding: 5px;
+  width: 80%;
   margin: 40px auto;
   background-color: var(--lime-green);
   border-radius: 3px;
@@ -254,7 +257,7 @@ ol {
   text-shadow: var(--light-shadow);
 }
 .workTxt {
-  text-align: right;
+  text-align: center;
 }
 .workBtn {
   text-align: center;
@@ -280,6 +283,8 @@ img:hover {
 }
 .profilePic {
   border-radius: 360px;
+  width: 60vw;
+  height: 100%;
 }
 a {
   color: var(--darker-green);
