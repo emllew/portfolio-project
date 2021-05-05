@@ -78,7 +78,7 @@ body {
 }
 .fa-angle-double-down {
   color: var(--darker-green);
-  font-size: 1.9vw;
+  font-size: 2.1vh;
   padding: 20px;
   animation: color-change 8s infinite;
 }
@@ -229,7 +229,7 @@ button.contact:hover {
   color: var(--darker-green);
 }
 img.icon {
-  width: 10vw;
+  height: 10vh;
   border: none;
   box-shadow: none;
 }
@@ -267,9 +267,10 @@ ol {
 }
 
 img {
+  display: inline-flex;
   justify-content: center;
   align-content: center;
-  max-width: 40vw;
+  max-width: 30vw;
   border: 3px solid var(--orange);
   box-shadow: var(--box-shadow);
 }
@@ -278,7 +279,6 @@ img:hover {
 }
 .profilePic {
   border-radius: 360px;
-  width: 30vw;
 }
 a {
   color: var(--darker-green);
