@@ -78,7 +78,7 @@ body {
 }
 .fa-angle-double-down {
   color: var(--darker-green);
-  font-size: 2.1vh;
+  font-size: 2.6vh;
   padding: 20px;
   animation: color-change 8s infinite;
 }
@@ -173,13 +173,14 @@ button.projects:hover {
   border: 2px solid var(--lime-green);
   transition: 200ms ease-in;
 }
+
 button.contact {
   color: var(--orange);
   background-color: var(--pale-peach);
   border: 2px solid var(--pale-peach);
   border-radius: 2px;
   font-size: 19px;
-  margin: 25px auto;
+
   padding: 15px;
   font-weight: 600;
 }
@@ -243,7 +244,7 @@ ol {
 }
 .contactMeBox {
   clear: both;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   width: 90%;
   padding: 5px;
   margin: 40px auto;
@@ -256,7 +257,7 @@ ol {
   text-align: right;
 }
 .workBtn {
-  text-align: left;
+  text-align: center;
 }
 
 .address {
@@ -315,24 +316,61 @@ a:hover {
   font-size: large;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 987px) {
+  h1 {
+    font-size: 10vw;
+  }
+  .project-card {
+    width: 22vw;
+  }
+  .index-card {
+    width: 40vw;
+  }
+}
+@media (max-width: 767px) {
   .project-card {
     width: 70vw;
-    padding: 15px;
-    margin: 20px;
+  }
+  .card-img-top {
+    width: 100%;
+  }
+  .appComment,
+  .appImg {
+    width: 70vw;
+  }
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 15vw;
+  }
+  .project-card {
+    width: 50vw;
   }
   .about-section {
     margin: 30px auto;
   }
   h2 {
-    font-size: 3em;
+    font-size: 5vw;
     padding: 5px;
     line-height: 1;
   }
+  .appComment,
+  .appImg {
+    width: 60vw;
+  }
+  .workBtn {
+    width: 100%;
+  }
+  .projects-section {
+    padding: 30px;
+  }
 }
-@media (max-width: 310px) {
+@media (max-width: 400px) {
+  h2 {
+    font-size: 5vw;
+  }
   .header {
-    height: 70vh;
+    height: 100vh;
   }
   .hero {
     width: 100vw;
@@ -343,6 +381,19 @@ a:hover {
   h2 {
     font-size: 7vw;
     padding: 5px;
+  }
+  .project-card {
+    width: 50vw;
+  }
+  .appComment,
+  .appImg {
+    width: 50vw;
+  }
+  .projects-section {
+    padding: 15px;
+  }
+  .card-img-top {
+    width: 100%;
   }
   button {
     font-size: 4vw;
