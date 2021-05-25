@@ -140,6 +140,7 @@ h5 {
 }
 p {
   color: white;
+  line-height: 1.5;
 }
 .groovy {
   animation: color-change-yellow 4s infinite;
@@ -282,9 +283,9 @@ img:hover {
   border: 3px solid var(--yellow);
 }
 .profilePic {
-  border-radius: 360px;
+  border-radius: 2px;
   width: 60vw;
-  height: 100%;
+  height: 80%;
 }
 a {
   color: var(--darker-green);
