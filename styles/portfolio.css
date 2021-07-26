@@ -212,6 +212,7 @@ button.contact:hover {
 }
 .card-text {
   text-align: center;
+  font-size: 0.9rem;
   color: var(--darker-green);
 }
 .contact-me-section {
