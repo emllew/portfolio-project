@@ -38,7 +38,7 @@ body {
   flex: 1 0 auto;
 }
 .header {
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   flex-direction: column;
   position: relative;
@@ -70,8 +70,8 @@ body {
   padding-top: 2px;
 }
 .fa-bars {
-  color:var(--orange);
-font-size:x-large;
+  color: var(--orange);
+  font-size: x-large;
 }
 .hero {
   top: 50%;
