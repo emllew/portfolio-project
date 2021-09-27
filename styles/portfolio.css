@@ -198,7 +198,7 @@ button.contact:hover {
 
 .projects-section {
   padding: 40px;
-  margin: 40px;
+
   text-align: center;
   flex-direction: column;
   background-color: #cad0728f;
@@ -218,6 +218,13 @@ button.contact:hover {
 .contact-me-section {
   font-size: 1.2em;
   height: 90vh;
+
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 2;
   text-align: center;
   background-color: rgba(202, 208, 114, 0.4);
