@@ -14,13 +14,13 @@
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
 
   <link href="styles/portfolio.css" rel="stylesheet" />
-  <title>emily llewelyn</title>
+  <title>Emily Llewelyn</title>
 </head>
 
 <body>
   <div class="main">
     <div class="header">
-      <nav class="navbar navbar-expand-lg navbar-green fs-5   p-3 bg-transparent">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-green fs-5 p-3 ">
         <div class="container">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,117 +32,123 @@
                 <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about.html">About</a>
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
               </li>
 
 
               <li class="nav-item">
-                <a class="nav-link" href="/contact.html">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <div class="hero">
-        <h1>emily llewelyn</h1>
-        <h3>Frontend Developer based in Cornwall, UK</h3>
-        <button onclick="document.location='contact.html'" class="contact"> Contact me here!</button>
-        <br />
-        <i class="fas fa-angle-double-down"></i>
+        <h1>Emily Llewelyn</h1>
+        <h3>Frontend Developer based in the UK</h3>
+        <button onclick="document.location='#contact'" class="contact"> Contact</button>
+
       </div>
 
     </div>
 
-    <section class="projects-section">
-      <h3 id="projects">Here are a couple of my <a href="/projects.html" class="groovy">projects</a></h3>
+    <section class="projects-section" id="projects">
+      <h3 id="projects">Here are a couple of my projects</h3>
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="col-md-4 p-3">
+          <div class="col-md-4 mt-5 p-3">
             <div class="card project-card">
               <img src="images/tipCalculator.gif" class="img-fluid card-img-top" alt="tip calculator">
               <div class="card-body">
                 <p class="card-text"><a href="https://pensive-hypatia-704f51.netlify.app/">This is a responsive tip
                     calculator. It is made using HTML, CSS and JavaScript, and it was made according to a design
-                    specification.</a></p>
+                    specification.<br /><br />pensive-hypatia-704f51.netlify.app/</a></p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 p-3">
+          <div class="col-md-4 mt-5 p-3">
             <div class="card project-card">
               <img src="images/auroch.gif" class="img-fluid card-img-top" alt="Website for a Small Business">
               <div class="card-body">
                 <p class="card-text"><a href="https://aurochs.page/">This is a project for a small business. It is
                     made using HTML, CSS, Javascript, and
                     Bootstrap, and is hosted on its own
-                    domain: <p style="text-decoration: underline;">aurochs.page</p></a> </p>
+                    domain:<br /><br />aurochs.page</a> </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 p-3">
+          <div class="col-md-4 mt-5 p-3">
             <div class="card project-card">
               <img src="images/Untitled4.gif" class="img-fluid card-img-top" alt="Website for a Blog Site">
               <div class="card-body">
                 <p class="card-text"><a href="https://cranky-hawking-2d2f80.netlify.app/">This is a responsive site for
                     a blog company. It is made using HTML, CSS and Bootstrap, and was made according to a design
-                    specification.</a></p>
+                    specification.<br /><br />cranky-hawking-2d2f80.netlify.app/</a></p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 p-3">
+          <div class="col-md-4 mt-5 p-3">
             <div class="card project-card">
               <img src="images/JS Weather App.gif" class="card-img-top img-fluid" alt="JavaScript weather app">
               <div class="card-body">
                 <p class="card-text"><a href="https://practical-hoover-1a47cf.netlify.app">JavaScript Weather App, made
-                    using OpenWeather API</a></p>
+                    using OpenWeather API<br /><br />practical-hoover-1a47cf.netlify.app</a></p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 p-3">
+          <div class="col-md-4 mt-5 p-3">
             <div class="card project-card">
-              <img src="images/React Weather App.gif" class="  card-img-top" alt="React weather app">
+              <img src="images/React Weather App.gif" class="card-img-top" alt="React weather app">
               <div class="card-body">
                 <p class="card-text"><a href="https://hopeful-bohr-eb9cd1.netlify.app">React Weather App, made using
-                    OpenWeather API</a></p>
+                    OpenWeather API<br /><br />hopeful-bohr-eb9cd1.netlify.app</a></p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 p-3">
+          <div class="col-md-4 mt-5 p-3">
             <div class="card project-card">
               <img src="images/dictionary.gif" class="img-fluid  card-img-top" alt="React dictionary app">
               <div class="card-body">
                 <p class="card-text"><a href="https://upbeat-ardinghelli-5ab4ca.netlify.app">React Dictionary App, made
                     using (unofficial) Google Dictionary API
-                    and Pexels API</a></p>
+                    and Pexels API<br />upbeat-ardinghelli-5ab4ca.netlify.app</a></p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 p-3">
+          <div class="col-md-4 mt-5 p-3">
             <div class="card project-card">
               <img src="images/button.gif" class="img-fluid  card-img-top" alt="Appearance Changer App">
               <div class="card-body">
                 <p class="card-text"><a href="https://focused-darwin-f1006b.netlify.app/">An app to change the
-                    appearance of a Button, made using JavaScript</a></p>
+                    appearance of a Button, made using
+                    JavaScript<br /><br />focused-darwin-f1006b.netlify.app/</a>
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 p-3">
+          <div class="col-md-4 mt-5 p-3">
             <div class="card project-card">
               <img src="images/CalculatorJS.gif" class="img-fluid  card-img-top" alt="JavaScript Calculator App">
               <div class="card-body">
-                <p class="card-text"><a href="https://mystifying-brattain-58d4fa.netlify.app/">Calculator App, made
-                    using JavaScript</a></p>
+                <p class="card-text">
+                  <a href="https://mystifying-brattain-58d4fa.netlify.app/">Calculator App, made
+                    using JavaScript<br /><br />mystifying-brattain-58d4fa.netlify.app/</a>
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 p-3">
+          <div class="col-md-4 mt-5 p-3">
             <div class="card project-card">
               <img src="images/etchasketch.gif" class="img-fluid card-img-top"
                 alt="Javascript DOM Manipulation Etch-a-Sketch app">
               <div class="card-body">
                 <p class="card-text"><a href="https://happy-haibt-22672d.netlify.app">Javascript DOM Manipulation:
-                    Etch-a-Sketch</a></p>
+                    Etch-a-Sketch<br /><br />happy-haibt-22672d.netlify.app</a></p>
               </div>
             </div>
           </div>
@@ -152,6 +158,11 @@
       </div>
 
     </section>
+
+
+
+
+
     <div class="container contactMeBox">
       <div class="row align-items-center">
         <div class="col-sm-8 p-4 workTxt">
@@ -162,24 +173,158 @@
           </p>
         </div>
         <div class="col-4 p-4 workBtn">
-          <button onclick="document.location='contact.html'" class="contact">Let's talk!</button>
+          <button onclick="document.location='#contact'" class="contact">Let's talk!</button>
         </div>
       </div>
     </div>
-  </div>
-  <footer class="footer container-fluid">
-    <div class="row">
-      <address class="col-xs">
-        <a href="mailto:emilyllewelyn@gmail.com"> emilyllewelyn@gmail.com</a>
-      </address>
-    </div>
-    <div class="row">
 
-      <a href="https://www.github.com/emllew" class="github circle col-xs"><i class="fab fa-github"></i></a>
-      <a href="https://twitter.com/emllllew" class="twitter circle col-xs"><i class="fab fa-twitter"></i></a>
+    <section class="about-section" id="about">
+      <div class="container-fluid p-5">
+        <div class="row about">
+          <div class="col-sm-9 px-5">
+
+            <h2>
+              Hello! <br />
+              I'm Emily
+            </h2>
+
+            <p>I have been focussing on HTML, CSS, Javascript, and
+              React, and I am now learning full-stack methods.
+              My goal is
+              to build dynamic and websites that are fun and accessible for everyone.</p>
+            <p>I have a degree in Film & English and a background in media, filmmaking, and animation, and I love
+              working on
+              creative
+              projects.</p>
+            <p>Outside of web development I love cooking, cult cinema, and photography.</p>
+
+          </div>
+          <div class="col-sm-3 d-flex justify-content-center"><img class="profilePic" src="images/img_.jpg"
+              rel="profile image" /></div>
+        </div>
+
+
+
+        <div class="row pt-5 mx-5 p-5 align-items-center justify-content-center">
+          <h5>Here's how I've been studying ...</h5>
+        </div>
+        <div class="row align-itemls-center justify-content-center">
+          <div class="col-sm-3 pb-4  d-flex justify-content-center">
+            <img src="images/code.png" class="img-fluid icon" />
+          </div>
+          <div class="col-sm-9 px-5 pb-4">
+            <p>
+              I have compleded the Enterprise Developer to Full Stack Developer Pathway via
+              <a href="https://heartofswlep.co.uk/about-the-lep/how-we-are-organised/digital-skills-partnership/"
+                rel="digital skills partnership">The
+                Digital Skills Partnership</a>.
+              <br />
+              This was a steep learning curve! I learned about how to build full stack applications, building on my
+              knowledge of
+              front end.
+              <br />
+              The course covers MERN and MEAN
+              stacks, secure programming, and testing. I learned about a lot of new things, including Spring with
+              Java,
+              Python API
+              deployment,
+              and
+              RESTful
+              services in the
+              middle/back end.
+              <br />
+              All of this comes
+              together to build and deploy full stack projects!
+            </p>
+          </div>
+          <div class="col-sm-3 pb-4 pt-5 d-flex justify-content-center"><img src="images/shining.png"
+              class="img-fluid icon" />
+          </div>
+
+
+          <div class="col-sm-9 px-5 pb-4 pt-5">
+            <p>
+              I began studing web development in August 2020 with
+              <a href="https://shecodes.io/hall-of-fame?q=emily+llewelyn&commit=Search"
+                rel="emily on shecodes">SheCodes</a>.
+              <br />
+              I have learned
+              <a href="https://www.shecodes.io/workshops" rel="shecodes workshops">
+                HTML, CSS, JavaScript,
+                React, hosting, Bootstrap, GitHub,
+                APIs, flexbox & responsive design, and
+                SEO</a> to a level that I can confidently build front-end projects from scratch.
+              <br />
+              This portfolio is my final project for
+              <a href="https://www.shecodes.io/" rel="shecodes">SheCodes
+                Responsive</a>!
+            </p>
+
+          </div>
+          <div class="col-sm-3 pb-4 pt-5 d-flex justify-content-center"><img src="images/idea.png"
+              class="img-fluid icon" /></div>
+
+
+          <div class="col-sm-9 px-5 pb-4 pt-5">
+            <p>
+              <br />
+              I also study with
+              <a href="https://www.freecodecamp.org/" rel="free code camp">freeCodeCamp</a>
+              and
+              <a href="https://www.theodinproject.com/" rel="the odin project">The Odin Project</a>,
+              along with other
+              exercise-based
+              tutorials,
+              where I have practised my
+              coding by working on smaller projects.
+              <br />
+              I have a
+              <a href="https://www.freecodecamp.org/certification/emllew/responsive-web-design"
+                rel="free-code-camp">Responsive
+                Web Design Certification</a>
+              from freeCodeCamp and am working towards getting others.
+            </p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <div class="container-fluid contact-me-section" id="contact">
+      <div class="row">
+        <div class="col">
+          <h4>Find me here:</h4>
+          <ol>
+            <li>Email
+              <a href="mailto:emilyllewelyn@gmail.com"> emilyllewelyn@gmail.com</a> <i class="far fa-envelope"></i>
+            </li>
+            <br />
+            <li>Github <a href="https://www.github.com/emllew">@emllew</a> <i class="fab fa-github"></i></li>
+            <br />
+            <li>Twitter (100 Days of Code) <a href="https://www.twitter.com/emllllew">@emllllew</a> <i
+                class="fab fa-twitter"></i></li>
+            <br />
+          </ol>
+          </h3>
+
+
+        </div>
+      </div>
     </div>
+
+
+
+  </div>
+  <footer class="footer">
+
     <div class="row">
       <a href="https://github.com/emllew/portfolio-project">Coded by Emily</a>
+    </div>
+    <div class="row">
+      <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+          href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </div>
   </footer>
 </body>
