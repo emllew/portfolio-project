@@ -17,10 +17,11 @@
   <title>Emily Llewelyn</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
   <div class="main">
+    <div id="hero"></div>
     <div class="header">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-green fs-5 p-3 ">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-green fs-5 p-3 " id="navbar">
         <div class="container">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +30,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="#hero">Emily Llewelyn</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
@@ -37,8 +38,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
               </li>
-
-
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
@@ -180,8 +179,8 @@
 
     <section class="about-section" id="about">
       <div class="container-fluid p-5">
-        <div class="row about">
-          <div class="col-sm-9 px-5">
+        <div class="row about row pt-5 mx-5 p-5 align-items-center justify-content-center">
+          <div class="col-lg-9">
 
             <h2>
               Hello! <br />
@@ -199,7 +198,7 @@
             <p>Outside of web development I love cooking, cult cinema, and photography.</p>
 
           </div>
-          <div class="col-sm-3 d-flex justify-content-center"><img class="profilePic" src="images/img_.jpg"
+          <div class="col-md-3 d-flex justify-content-center"><img class="profilePic" src="images/img_.jpg"
               rel="profile image" /></div>
         </div>
 
@@ -208,11 +207,11 @@
         <div class="row pt-5 mx-5 p-5 align-items-center justify-content-center">
           <h5>Here's how I've been studying ...</h5>
         </div>
-        <div class="row align-itemls-center justify-content-center">
-          <div class="col-sm-3 pb-4  d-flex justify-content-center">
+        <div class="row pt-5 mx-5 p-5 align-items-center justify-content-center">
+          <div class="col-lg-3 pb-4  d-flex justify-content-center">
             <img src="images/code.png" class="img-fluid icon" />
           </div>
-          <div class="col-sm-9 px-5 pb-4">
+          <div class="col-lg-9 px-5 pb-4">
             <p>
               I have compleded the Enterprise Developer to Full Stack Developer Pathway via
               <a href="https://heartofswlep.co.uk/about-the-lep/how-we-are-organised/digital-skills-partnership/"
@@ -237,12 +236,12 @@
               together to build and deploy full stack projects!
             </p>
           </div>
-          <div class="col-sm-3 pb-4 pt-5 d-flex justify-content-center"><img src="images/shining.png"
+          <div class="col-lg-3 pb-4 pt-5 d-flex justify-content-center"><img src="images/shining.png"
               class="img-fluid icon" />
           </div>
 
 
-          <div class="col-sm-9 px-5 pb-4 pt-5">
+          <div class="col-lg-9 px-5 pb-4 pt-5">
             <p>
               I began studing web development in August 2020 with
               <a href="https://shecodes.io/hall-of-fame?q=emily+llewelyn&commit=Search"
@@ -261,11 +260,11 @@
             </p>
 
           </div>
-          <div class="col-sm-3 pb-4 pt-5 d-flex justify-content-center"><img src="images/idea.png"
+          <div class="col-lg-3 pb-4 pt-5 d-flex justify-content-center"><img src="images/idea.png"
               class="img-fluid icon" /></div>
 
 
-          <div class="col-sm-9 px-5 pb-4 pt-5">
+          <div class="col-lg-9 px-5 pb-4 pt-5">
             <p>
               <br />
               I also study with
@@ -291,32 +290,30 @@
 
       </div>
     </section>
+  </div>
+  <div class="container-fluid contact-me-section" id="contact">
+    <div class="row">
+      <div class="col">
+        <h4>Find me here:</h4>
+        <ol>
+          <li>Email
+            <a href="mailto:emilyllewelyn@gmail.com"> emilyllewelyn@gmail.com</a> <i class="far fa-envelope"></i>
+          </li>
+          <br />
+          <li>Github <a href="https://www.github.com/emllew">@emllew</a> <i class="fab fa-github"></i></li>
+          <br />
+          <li>Twitter (100 Days of Code) <a href="https://www.twitter.com/emllllew">@emllllew</a> <i
+              class="fab fa-twitter"></i></li>
+          <br />
+        </ol>
+        </h3>
 
-    <div class="container-fluid contact-me-section" id="contact">
-      <div class="row">
-        <div class="col">
-          <h4>Find me here:</h4>
-          <ol>
-            <li>Email
-              <a href="mailto:emilyllewelyn@gmail.com"> emilyllewelyn@gmail.com</a> <i class="far fa-envelope"></i>
-            </li>
-            <br />
-            <li>Github <a href="https://www.github.com/emllew">@emllew</a> <i class="fab fa-github"></i></li>
-            <br />
-            <li>Twitter (100 Days of Code) <a href="https://www.twitter.com/emllllew">@emllllew</a> <i
-                class="fab fa-twitter"></i></li>
-            <br />
-          </ol>
-          </h3>
 
-
-        </div>
       </div>
     </div>
-
-
-
   </div>
+
+
   <footer class="footer">
 
     <div class="row">
